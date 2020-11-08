@@ -1,4 +1,4 @@
-const { isExternalModuleNameRelative } = require("typescript")
+const { isExternalModuleNameRelative } = require("javascript")
 module.exports = {
   "type": "postgres",
   "url": process.env.DATABASE_URL,
