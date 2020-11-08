@@ -10,6 +10,6 @@ module.exports = {
     "./dist/database/migrations/*.js"
   ],
   "cli": {
-    "migrationsDir": "./src/database/migrations/"
+    "migrationsDir": "./dist/database/migrations/"
   }
 }
