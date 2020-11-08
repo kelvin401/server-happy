@@ -16,7 +16,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "typeorm": "node --require ts-node-dev ./node_modules/typeorm/cli.js",
     "build": "tsc"
   },
   "devDependencies": {
