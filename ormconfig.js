@@ -1,15 +1,21 @@
+
 console.log('process.env.DATABASE_URL: >> ', process.env.DATABASE_URL);
+
 module.exports = {
   "type": "postgres",
   "url": process.env.DATABASE_URL,
-  "entities": [
-    "dist/models/*.js"
-  ],
-
+  // "host": "localhost",
+  // "port": 5432,
+  // "username": "postgres",
+  // "password": "docker",
+  // "database": "orphanages",
   "migrations": [
-    "dist/database/migrations/*.js"
+    "./dist/database/migrations/*.js"
+  ],
+  "entities": [
+    "./dist/models/*.js"
   ],
   "cli": {
-    "migrationsDir": "./dist/database/migrations/"
+    "migrationsDir": "./src/database/migrations/"
   }
 }

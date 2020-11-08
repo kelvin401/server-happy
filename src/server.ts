@@ -1,16 +1,16 @@
+import dotenv from "dotenv";
 import express from "express";
 import "express-async-errors";
 import cors from "cors";
 
 import path from "path";
-import dotenv from "dotenv";
 import "./database/connection";
 
 import routes from "./routes";
 import errorHandler from "./errors/handler";
 
-dotenv.config();
 const app = express();
+dotenv.config();
 
 app.use(cors());
 app.use(express.json());
