@@ -3,16 +3,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const dotenv_1 = __importDefault(require("dotenv"));
 const express_1 = __importDefault(require("express"));
 require("express-async-errors");
 const cors_1 = __importDefault(require("cors"));
 const path_1 = __importDefault(require("path"));
-const dotenv_1 = __importDefault(require("dotenv"));
 require("./database/connection");
 const routes_1 = __importDefault(require("./routes"));
 const handler_1 = __importDefault(require("./errors/handler"));
-dotenv_1.default.config();
 const app = express_1.default();
+dotenv_1.default.config();
 app.use(cors_1.default());
 app.use(express_1.default.json());
 app.use(routes_1.default);

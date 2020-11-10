@@ -4,10 +4,10 @@ exports.default = {
     render(image) {
         return {
             id: image.id,
-            url: `http://127.0.0.1:3333/uploads/${image.path}`
+            url: `http://127.0.0.1:3333/uploads/${image.path}`,
         };
     },
     renderMany(images) {
-        return images.map(image => this.render(image));
-    }
+        return images.map((image) => this.render(image));
+    },
 };
