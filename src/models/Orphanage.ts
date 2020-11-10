@@ -17,10 +17,10 @@ export default class Orphanage {
   name: string;
 
   @Column()
-  latitude: number;
+  latitude: Number;
 
   @Column()
-  longitude: number;
+  longitude: Number;
 
   @Column()
   about: string;
