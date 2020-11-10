@@ -5,7 +5,7 @@
     "./dist/database/migrations/*.js"
   ],
   "entities": [
-    "./dist/models/*.{.ts,.js}"
+    "./dist/models/*{.ts,.js}"
   ],
   "cli": {
     "migrationsDir": "./src/database/migrations/"
