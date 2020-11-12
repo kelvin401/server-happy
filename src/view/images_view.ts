@@ -4,11 +4,13 @@ export default {
   render(image: Image) {
     return {
       id: image.id,
-      url: `https://server-happy.herokuapp.com/uploads/${image.path}`,
-    };
+      url: `http://127.0.0.1:3333/uploads/${image.path}`
+    }
   },
 
   renderMany(images: Image[]) {
-    return images.map((image) => this.render(image));
-  },
-};
+    return images.map(
+        image => this.render(image)
+    );
+  }
+}

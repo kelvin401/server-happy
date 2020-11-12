@@ -25,7 +25,7 @@ __decorate([
     __metadata("design:type", String)
 ], Image.prototype, "path", void 0);
 __decorate([
-    typeorm_1.ManyToOne(() => Orphanage_1.default, (orphanage) => orphanage.images),
+    typeorm_1.ManyToOne(() => Orphanage_1.default, orphanage => orphanage.images),
     typeorm_1.JoinColumn({ name: "orphanage_id" }),
     __metadata("design:type", Orphanage_1.default)
 ], Image.prototype, "orphanage", void 0);
